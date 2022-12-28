@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+}
+
+.search-bar {
+    height: 2rem;
+    border-radius: 25%;
+    width: 200px;
+    background-color: grey;
+}
+
+.notifications {
+    width: 1rem;
+}
+
+img {
+    max-height: 2rem;
+    max-width: 2rem;
+}
