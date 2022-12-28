@@ -1,6 +1,26 @@
-.container {
-    display: grid;
+* {
+    box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "sidebar header header header header header"
+        "sidebar main main main main aside"
+        "sidebar main main main main aside"
+        "sidebar main main main main aside"
+        "sidebar main main main main aside"
+        "sidebar main main main main aside"
+        "sidebar main main main main aside"
+    ;
+}
+
+header {
+    background-color: rgb(253, 106, 253);
+    grid-area: header
+}
+
 
 .search-bar {
     height: 2rem;
@@ -13,7 +33,25 @@
     width: 1rem;
 }
 
+main {
+    background-color: salmon;
+    grid-area: main;
+}
+
+.sidebar {
+    background-color: lightblue;
+    grid-area: sidebar;
+
+}
+
+aside {
+    background-color: olivedrab;
+    grid-area: aside;
+}
+
+/* temp  */
+
 img {
-    max-height: 2rem;
-    max-width: 2rem;
+    height: 2rem;
+    width: 2rem;
 }
